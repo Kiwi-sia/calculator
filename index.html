@@ -2,11 +2,45 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Source+Sans+Pro&display=swap"
+			rel="stylesheet"
+		/>
 		<link rel="stylesheet" href="style.css" />
 		<title>Calculator</title>
 	</head>
 	<body>
-		<h1>Calculator</h1>
+		<div class="container">
+			<h1>Calculator</h1>
+			<main id="calculator">
+				<div class="display"><div class="input"></div></div>
+				<div class="number-block">
+					<div class="operands">
+						<span class="button operand add">+</span>
+						<span class="button operand substract">-</span>
+						<span class="button operand multiply">*</span>
+						<span class="button operand divide">/</span>
+						<span class="button operand clear">Clear</span>
+						<span class="button operand comma">,</span>
+					</div>
+					<div class="digits">
+						<span class="button digit">7</span>
+						<span class="button digit">8</span>
+						<span class="button digit">9</span>
+						<span class="button digit">4</span>
+						<span class="button digit">5</span>
+						<span class="button digit">6</span>
+						<span class="button digit">1</span>
+						<span class="button digit">2</span>
+						<span class="button digit">3</span>
+						<span class="button digit">0</span>
+						<span class="button operand result">=</span>
+					</div>
+				</div>
+			</main>
+		</div>
 		<script src="script.js"></script>
 	</body>
 </html>

@@ -8,4 +8,87 @@ html {
 body {
 	margin: 0;
 	padding: 0;
+	/* font-family: Courier New; */
+	font-family: "Open Sans", sans-serif;
+	font-family: "Source Sans Pro", sans-serif;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+#calculator {
+	display: flex;
+	background-color: rgb(219, 219, 215);
+	height: 380px;
+	width: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid rgb(36, 35, 35);
+	border-radius: 12px;
+	box-shadow: 5px 5px 5px rgb(24, 17, 46);
+}
+
+.input {
+	height: 30px;
+	width: 200px;
+	background-color: grey;
+	border: 1px solid black;
+	margin: 20px 10px;
+}
+
+.number-block {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: stretch;
+	gap: 0.5rem;
+	margin: 20px;
+}
+
+/* //buttons// */
+
+.button {
+	color: #ffffff;
+	border: 1px solid #0b0e07;
+	border-radius: 6px;
+	display: inline-block;
+	box-shadow: inset 0px -3px 7px 0px #150730;
+	background: rgb(63, 26, 58);
+	background: linear-gradient(to bottom, rgb(63, 26, 58) 5%, rgb(41, 13, 29) 100%);
+	font-size: 16px;
+	padding: 10px 22px;
+	text-align: center;
+	text-shadow: 0px 1px 0px #263666;
+	box-shadow: inset -2px -2px -2px rgb(24, 17, 46);
+}
+.button:hover {
+	background: rgb(63, 26, 58);
+	background: linear-gradient(to bottom, rgb(41, 13, 29) 5%, rgb(63, 26, 58) 100%);
+}
+
+.digit {
+	flex: 1;
+	background: rgb(24, 17, 46);
+	background: linear-gradient(to bottom, rgb(51, 44, 73) 5%, rgb(24, 17, 46) 100%);
+	text-shadow: 0px 1px 0px #6e7ec0;
+}
+
+.digit:hover {
+	background: linear-gradient(to bottom, rgb(24, 17, 46) 5%, rgb(51, 44, 73) 100%);
+}
+.digits,
+.operands {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 0.3rem;
+	flex-grow: 1;
+}
+
+.result {
+	flex: 2;
 }
