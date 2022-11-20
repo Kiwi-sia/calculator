@@ -22,7 +22,7 @@ body {
 #calculator {
 	display: flex;
 	background-color: rgb(219, 219, 215);
-	height: 380px;
+	height: 350px;
 	width: 250px;
 	display: flex;
 	flex-direction: column;
@@ -71,24 +71,46 @@ body {
 }
 
 .digit {
-	flex: 1;
 	background: rgb(24, 17, 46);
 	background: linear-gradient(to bottom, rgb(51, 44, 73) 5%, rgb(24, 17, 46) 100%);
 	text-shadow: 0px 1px 0px #6e7ec0;
+	/* flex-basis: 33%; */
+	/* flex: 1; */
 }
 
 .digit:hover {
 	background: linear-gradient(to bottom, rgb(24, 17, 46) 5%, rgb(51, 44, 73) 100%);
 }
-.digits,
-.operands {
+/* 
+.operand {
+	flex: 5;
+} */
+.digit-section,
+.operand-section {
 	display: flex;
-	flex-direction: row;
 	flex-wrap: wrap;
-	gap: 0.3rem;
-	flex-grow: 1;
+	gap: 0.5rem;
 }
 
-.result {
-	flex: 2;
+.row {
+	width: 100%;
+	display: flex;
+	gap: 0.5rem;
+}
+
+.row .digit,
+.row .operand {
+	flex-basis: 66px;
+}
+.row.bottom .digit {
+	flex-grow: 0;
+}
+
+.operand-section {
+	flex-wrap: nowrap;
+	width: 100%;
+}
+.operand-section .button {
+	padding: 10px 12px;
+	flex: 1;
 }
